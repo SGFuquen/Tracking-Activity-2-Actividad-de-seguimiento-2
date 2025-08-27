@@ -12,7 +12,7 @@ if (estado === "encendido") {
     }
 
     if (color === "amarillo") {
-        console.log("Precaución");
+        console.log("Precaucion");
     }
 
     if (color === "rojo") {
@@ -22,4 +22,5 @@ if (estado === "encendido") {
     if (color !== "verde" && color !== "amarillo" && color !== "rojo") {
         console.log("Fallo en el dispositivo");
     }
+
 }
