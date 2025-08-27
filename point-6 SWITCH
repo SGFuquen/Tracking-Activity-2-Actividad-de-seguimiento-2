@@ -1,0 +1,51 @@
+let operador = prompt("Operador: Claro, Tigo o Movistar");
+let tipo = prompt("¿Recarga o paquete?");
+
+switch (tipo) {
+    case "recarga":
+        let monto = prompt("Monto:");
+        console.log("Recarga hecha por $" + monto);
+        break;
+
+    case "paquete":
+        switch (operador) {
+            case "Claro":
+                let paqueteClaro = prompt("Paquete: CV o CA");
+                switch (paqueteClaro) {
+                    case "CV":
+                        console.log("Paquete CV activado. $12000");
+                        break;
+                    case "CA":
+                        console.log("Paquete CA activado. $20000");
+                        break;
+                    default:
+                        console.log("Paquete no válido para Claro");
+                }
+                break;
+
+            case "Tigo":
+                let paqueteTigo = prompt("Paquete: TV o TA");
+                switch (paqueteTigo) {
+                    case "TV":
+                        console.log("Paquete TV activado. $22000");
+                        break;
+                    case "TA":
+                        console.log("Paquete TA activado. $30000");
+                        break;
+                    default:
+                        console.log("Paquete no válido para Tigo");
+                }
+                break;
+
+            case "Movistar":
+                console.log("Paquetes suspendidos.");
+                break;
+
+            default:
+                console.log("Operador no reconocido");
+        }
+        break;
+
+    default:
+        console.log("Tipo no válido");
+}

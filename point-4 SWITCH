@@ -1,0 +1,20 @@
+let codigo = prompt("Ingrese su codigo");
+
+let letra = codigo.charAt(0);
+
+switch (letra) {
+    case "O":
+        console.log("Zona Oriental");
+        break;
+    case "T":
+        console.log("Zona Occidental");
+        break;
+    case "C":
+        console.log("Zona Sur");
+        break;
+    case "S":
+        console.log("Zona Norte");
+        break;
+    default:
+        console.log("Codigo invalido");
+}

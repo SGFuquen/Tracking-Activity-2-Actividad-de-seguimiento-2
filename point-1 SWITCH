@@ -1,0 +1,19 @@
+let horasPequenas = parseInt(prompt("Ingrese las horas de lavadoras pequeñas"));
+let horasGrandes = parseInt(prompt("Ingrese las horas de lavadoras grandes"));
+
+let precioPequena = 3000;
+let precioGrande = 4000;
+
+let totalHoras = horasPequenas + horasGrandes;
+let costoTotal = (horasPequenas * precioPequena) + (horasGrandes * precioGrande);
+
+switch (true) {
+    case (totalHoras > 10):
+        costoTotal *= 0.97; // 3% de descuento
+        break;
+    default:
+    
+        break;
+}
+
+console.log("El costo total del alquiler es: $" + costoTotal);

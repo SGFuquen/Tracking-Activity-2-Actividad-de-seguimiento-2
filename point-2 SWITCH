@@ -1,0 +1,55 @@
+let revista = prompt("Revista: Plata, National Geographic o American Journal");
+let tiempo = prompt("Tiempo: 3 meses, 6 meses o 1 año");
+let operador = prompt("Operador celular");
+
+let precio = 0;
+
+switch (revista) {
+    case "Plata":
+        switch (tiempo) {
+            case "3 meses":
+                precio = 6;
+                break;
+            case "6 meses":
+                precio = 11;
+                break;
+            case "1 año":
+                precio = 15;
+                break;
+        }
+        break;
+
+    case "National Geographic":
+        switch (tiempo) {
+            case "3 meses":
+                precio = 10;
+                break;
+            case "6 meses":
+                precio = 13;
+                break;
+            case "1 año":
+                precio = 22;
+                break;
+        }
+        break;
+
+    case "American Journal":
+        switch (tiempo) {
+            case "3 meses":
+                precio = 12;
+                break;
+            case "6 meses":
+                precio = 18;
+                break;
+            case "1 año":
+                precio = 30;
+                break;
+        }
+        break;
+}
+
+if (operador === "Claro") {
+    precio *= 0.95;
+}
+
+console.log("Total a pagar: $" + precio + " USD");

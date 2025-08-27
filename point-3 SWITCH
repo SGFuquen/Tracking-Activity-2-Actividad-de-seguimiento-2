@@ -1,0 +1,28 @@
+let estado = prompt("¿El semaforo se encuentra encendido o apagado?");
+
+switch (estado) {
+    case "apagado":
+        console.log("Semaforo apagado");
+        break;
+
+    case "encendido":
+        let color = prompt("Color del semaforo");
+
+        switch (color) {
+            case "verde":
+                console.log("Puede avanzar");
+                break;
+            case "amarillo":
+                console.log("Precaución");
+                break;
+            case "rojo":
+                console.log("Detengase");
+                break;
+            default:
+                console.log("Fallo en el dispositivo");
+        }
+        break;
+
+    default:
+        console.log("Estado desconocido del semaforo");
+}
